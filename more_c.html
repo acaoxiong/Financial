@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <script src="js/jquery-1.8.3.min.js"></script>
+    <script src="js/loading.js"></script>
+    <script src="js/FlexSlider/jquery.flexslider-min.js"></script>
+    <link rel="stylesheet" href="js/FlexSlider/flexslider.css" type="text/css">
+    <link rel="stylesheet" href="css/layout.css" type="text/css">
+    <link rel="stylesheet" href="css/more.css" type="text/css">
+    <title>所有課程</title>
+</head>
+<body>
+    <header></header>
+    <div id="main">
+        <div class="wp">
+            <div class="flexslider">
+                <ul class="slides">
+                    <li> <img src="img/banner.jpg" /> </li>
+                    <li> <img src="img/banner.jpg" /> </li>
+                </ul>
+            </div>
+            <div class="row1">
+                <ul class="tabs">
+                  <li><a class="active">所有課程</a></li> 
+                  <li>
+                      <a class="show">選擇老師</a>
+                      <ul class="tab2">
+                          <li><a href="">老師一</a></li>
+                          <li><a href="">老師二</a></li>
+                          <li><a href="">老師三</a></li>
+                          <li><a href="">老師四</a></li>
+                          <li><a href="">老師五</a></li>
+                      </ul>
+                  </li>
+                  <li><a>台股</a></li>
+                  <li><a>海期</a></li>
+                 </ul>
+                 <ul class="tab_container">
+                    <li id="tab1" class="tab_content">
+                        <a href="inside.html"> <img src="img/inside/2.png" alt="">
+                            <h5>記住三件事情,就可以開始挑選飆股 </h5>
+                            <div class="detail">
+                                <p>郭哲榮</p>
+                                <time>2018-2-27 12:07</time>
+                            </div>
+                             <div><span>NT.1990</span> <span class="btn"></span></div>
+                        </a>
+                        <a href="inside.html"> <img src="img/inside/2.png" alt="">
+                            <h5>記住三件事情,就可以開始挑選飆股 </h5>
+                            <div class="detail">
+                                <p>郭哲榮</p>
+                                <time>2018-2-27 12:07</time>
+                            </div>
+                             <div><span>NT.1990</span> <span class="btn"></span></div>
+                        </a>
+                        <a href="inside.html"> <img src="img/inside/2.png" alt="">
+                            <h5>記住三件事情,就可以開始挑選飆股 </h5>
+                            <div class="detail">
+                                <p>郭哲榮</p>
+                                <time>2018-2-27 12:07</time>
+                            </div>
+                             <div><span>NT.1990</span> <span class="btn"></span></div>
+                        </a>
+                        <a href="inside.html"> <img src="img/inside/2.png" alt="">
+                            <h5>記住三件事情,就可以開始挑選飆股 </h5>
+                            <div class="detail">
+                                <p>郭哲榮</p>
+                                <time>2018-2-27 12:07</time>
+                            </div>
+                             <div><span>NT.1990</span> <span class="btn"></span></div>
+                        </a>
+                        <a href="inside.html"> <img src="img/inside/2.png" alt="">
+                            <h5>記住三件事情,就可以開始挑選飆股 </h5>
+                            <div class="detail">
+                                <p>郭哲榮</p>
+                                <time>2018-2-27 12:07</time>
+                            </div>
+                             <div><span>NT.1990</span> <span class="btn"></span></div>
+                        </a>
+                        <a href="inside.html"> <img src="img/inside/2.png" alt="">
+                            <h5>記住三件事情,就可以開始挑選飆股 </h5>
+                            <div class="detail">
+                                <p>郭哲榮</p>
+                                <time>2018-2-27 12:07</time>
+                            </div>
+                             <div><span>NT.1990</span> <span class="btn"></span></div>
+                        </a>
+                        <a href="inside.html"> <img src="img/inside/2.png" alt="">
+                            <h5>記住三件事情,就可以開始挑選飆股 </h5>
+                            <div class="detail">
+                                <p>郭哲榮</p>
+                                <time>2018-2-27 12:07</time>
+                            </div>
+                             <div><span>NT.1990</span> <span class="btn"></span></div>
+                        </a>
+                        <a href="inside.html"> <img src="img/inside/2.png" alt="">
+                            <h5>記住三件事情,就可以開始挑選飆股 </h5>
+                            <div class="detail">
+                                <p>郭哲榮</p>
+                                <time>2018-2-27 12:07</time>
+                            </div>
+                             <div><span>NT.1990</span> <span class="btn"></span></div>
+                        </a>
+                        <a href="inside.html"> <img src="img/inside/2.png" alt="">
+                            <h5>記住三件事情,就可以開始挑選飆股 </h5>
+                            <div class="detail">
+                                <p>郭哲榮</p>
+                                <time>2018-2-27 12:07</time>
+                            </div>
+                             <div><span>NT.1990</span> <span class="btn"></span></div>
+                        </a>
+                    </li>
+                </ul>
+                 <div class="tab_bg"></div>              
+            </div>
+               
+        </div>
+    </div>
+    <footer></footer>
+    <script>
+        $('.wp .flexslider').flexslider({
+            animation: "slide"
+        });
+         var $H=$(window).height();
+        $('.tab_bg').height($H);
+        $('.row1 .tabs .show').click(function(){
+            $(this).siblings('.tab2').slideToggle();
+            $('.tab_bg').show();
+        });
+         $('.tab_bg').click(function(){
+             $('.row1 .tab2').hide();
+             $(this).hide();
+         });
+    </script>
+</body>
+
+</html>
